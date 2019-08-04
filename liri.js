@@ -9,16 +9,16 @@ var spotify = new Spotify(keys.spotify);
 
 var command = process.argv[2];
 
-var input = process.argv[3];
+var input = process.argv.slice(3).join(" ");
 
 function switchCase (){
 switch (command) {
     case "concert-this":        
-        console.log(input);
+        //console.log(input);
         concertThis();
         break;
     case "spotify-this-song":
-        console.log('spotify song');
+        //console.log('spotify song');
         if(input){
           spotifyFunction(input);
         }
@@ -28,7 +28,7 @@ switch (command) {
         }
         break;
     case "movie-this":
-        console.log('movie-this');
+        //console.log('movie-this');
         if(input){
           movieThis(input);
         }
@@ -38,7 +38,7 @@ switch (command) {
         }
         break;
     case "do-what-it-says":
-        console.log('do it');
+        //console.log('do what it says');
         doWhatItSays();
         break;
     default:
@@ -105,7 +105,7 @@ function doWhatItSays (){
       return console.log(error);
     }
     var dataArr = data.split(",");
-    console.log(dataArr);
+    //console.log(dataArr);
     command = dataArr[0];
     input = dataArr[1];
     switchCase();

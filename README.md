@@ -26,3 +26,5 @@ To run the app, input any of the four commands as argv[2].They will do the follo
 The movie will default to Mr. Nobody if no movie is entered. 
 
 4. do-what-it-says: This command will take the text inside of random.txt and then use it to call a LIRI command. 
+
+Demo video can be viewed here: https://drive.google.com/file/d/1UDTZbCuLBWV6oTxwWLyCAJigv4GgZYWu/view?usp=sharing
